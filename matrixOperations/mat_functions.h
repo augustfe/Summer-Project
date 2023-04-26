@@ -9,4 +9,6 @@ void allocate_array(double **array, int nx);
 
 void deallocate_array(double *array);
 
+double dot_product(double *A, double *B)
+
 #endif
