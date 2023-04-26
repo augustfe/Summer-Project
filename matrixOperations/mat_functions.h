@@ -9,6 +9,10 @@ void allocate_array(double **array, int nx);
 
 void deallocate_array(double *array);
 
-double dot_product(double *A, double *B)
+double dot_product(double *A, double *B);
+
+void zeros_1D(double *u);
+
+void zeros_2D(double **A);
 
 #endif
