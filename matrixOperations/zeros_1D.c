@@ -1,10 +1,8 @@
 #include <stdlib.h>
 
-void zeros_1D(double *u)
+void zeros_1D(double *u, int nx)
 {
-    double size_u = sizeof(u) / sizeof(u[0]);
-
-    for (int i = 0; i < size_u; i++)
+    for (int i = 0; i < nx; i++)
     {
         u[i] = 0;
     }

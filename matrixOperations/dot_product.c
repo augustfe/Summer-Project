@@ -1,16 +1,13 @@
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 extern int errno;
 
-double dot_product(double *A, double *B)
+double dot_product(double *A, int size_A, double *B, int size_B)
 {
-    int size_A, size_B;
     int errnum;
-
-    size_A = sizeof(A) / sizeof(A[0]);
-    size_B = sizeof(B) / sizeof(B[0]);
 
     if (size_A != size_B)
     {
